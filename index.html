@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+        }
+        select, button {
+          margin: 10px 0;
+          padding: 10px;
+          font-size: 16px;
+        }
+        .result {
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+        }
+      </style>
+</head>
+<body>
+    <h1>Search Mobile Features</h1>
+
+    <!-- Brand Dropdown -->
+    <label for="brand">Select Brand:</label>
+    <select id="brand" onchange="populateModels()">
+      <option value="" disabled selected>Select a Brand</option>
+    </select>
+  
+    <!-- Model Dropdown -->
+    <label for="model">Select Model:</label>
+    <select id="model">
+      <option value="" disabled selected>Select a Model</option>
+    </select>
+  
+    <!-- Search Button -->
+    <button onclick="searchMobile()">Search</button>
+  
+    <!-- Display Result -->
+    <div id="result" class="result" style="margin-top: 20px;"></div>
+    
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
